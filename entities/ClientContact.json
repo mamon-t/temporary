@@ -1,0 +1,12 @@
+{
+  "name": "ClientContact",
+  "fields": [
+    { "name": "client_id", "type": "reference", "required": true, "filterable": true },
+    { "name": "role", "type": "string", "size": 128 },
+    { "name": "name", "type": "string", "size": 256, "required": true },
+    { "name": "phone", "type": "string", "size": 64 },
+    { "name": "email", "type": "string", "size": 128 },
+    { "name": "address", "type": "string", "size": 512 },
+    { "name": "is_primary", "type": "boolean", "default": false, "filterable": true }
+  ]
+}

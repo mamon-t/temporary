@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@vibeli/sdk/functions": "npm:@vibeli/sdk@1.0.0/functions"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window"]
+  }
+}

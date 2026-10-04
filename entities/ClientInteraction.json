@@ -1,0 +1,9 @@
+{
+  "name": "ClientInteraction",
+  "fields": [
+    { "name": "client_id", "type": "reference", "required": true, "filterable": true },
+    { "name": "date", "type": "datetime", "required": true, "sortable": true },
+    { "name": "kind", "type": "enum", "enum": ["call", "email", "meeting", "note", "order"], "required": true, "filterable": true },
+    { "name": "description", "type": "string", "size": 4096, "required": true }
+  ]
+}

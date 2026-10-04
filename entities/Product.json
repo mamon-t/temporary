@@ -1,0 +1,17 @@
+{
+  "name": "Product",
+  "fields": [
+    { "name": "name", "type": "string", "size": 256, "required": true, "filterable": true, "sortable": true },
+    { "name": "sku", "type": "string", "size": 64, "filterable": true, "sortable": true },
+    { "name": "category", "type": "string", "size": 128, "filterable": true },
+    { "name": "unit", "type": "string", "size": 32, "default": "шт" },
+    { "name": "price", "type": "float", "required": true, "sortable": true },
+    { "name": "stock", "type": "integer", "default": 0, "sortable": true },
+    { "name": "manufacturer", "type": "string", "size": 256, "filterable": true },
+    { "name": "manufacturer_url", "type": "string", "size": 512 },
+    { "name": "supplier_id", "type": "reference", "filterable": true },
+    { "name": "last_supply_date", "type": "datetime", "sortable": true },
+    { "name": "photo_url", "type": "string", "size": 2048 },
+    { "name": "description", "type": "string", "size": 4096 }
+  ]
+}

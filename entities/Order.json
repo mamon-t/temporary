@@ -1,0 +1,11 @@
+{
+  "name": "Order",
+  "fields": [
+    { "name": "number", "type": "string", "size": 32, "required": true, "filterable": true, "sortable": true },
+    { "name": "client_id", "type": "reference", "required": true, "filterable": true },
+    { "name": "items", "type": "string", "size": 65536 },
+    { "name": "total", "type": "float", "required": true, "sortable": true },
+    { "name": "status", "type": "enum", "enum": ["new", "confirmed", "paid", "packed", "shipped", "closed", "cancelled"], "required": true, "filterable": true, "sortable": true },
+    { "name": "comment", "type": "string", "size": 4096 }
+  ]
+}

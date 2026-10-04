@@ -1,0 +1,22 @@
+{
+  "name": "Client",
+  "fields": [
+    { "name": "kind", "type": "enum", "enum": ["person", "company"], "required": true, "filterable": true },
+    { "name": "name", "type": "string", "size": 256, "required": true, "filterable": true, "sortable": true },
+    { "name": "status", "type": "enum", "enum": ["active", "archived"], "default": "active", "filterable": true },
+    { "name": "phone", "type": "string", "size": 64 },
+    { "name": "email", "type": "string", "size": 128 },
+    { "name": "address", "type": "string", "size": 512 },
+    { "name": "inn", "type": "string", "size": 32, "filterable": true },
+    { "name": "kpp", "type": "string", "size": 32 },
+    { "name": "ogrn", "type": "string", "size": 32 },
+    { "name": "legal_address", "type": "string", "size": 512 },
+    { "name": "bank_name", "type": "string", "size": 256 },
+    { "name": "bik", "type": "string", "size": 32 },
+    { "name": "account", "type": "string", "size": 64 },
+    { "name": "corr_account", "type": "string", "size": 64 },
+    { "name": "signer", "type": "string", "size": 256 },
+    { "name": "website", "type": "string", "size": 256 },
+    { "name": "comment", "type": "string", "size": 4096 }
+  ]
+}

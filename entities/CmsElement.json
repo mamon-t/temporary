@@ -1,0 +1,11 @@
+{
+  "name": "CmsElement",
+  "fields": [
+    { "name": "slug", "type": "string", "size": 120, "required": true, "filterable": true },
+    { "name": "kind", "type": "enum", "enum": ["text", "image", "media"], "required": true },
+    { "name": "value", "type": "string", "size": 4096 },
+    { "name": "style", "type": "string", "size": 1024 },
+    { "name": "base_value", "type": "string", "size": 4096 },
+    { "name": "status", "type": "enum", "enum": ["active", "superseded"], "default": "active" }
+  ]
+}
